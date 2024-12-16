@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Girl</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Spoqa Han Sans Neo', sans-serif;
+        }
+        .section {
+            width: 100%;
+            height: 100vh;
+        }
+        .section-1 {
+            position: relative;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+            background-image: url('image/for\ girls.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-1 h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            z-index: 1;
+        }
+        .section-1 p {
+            font-size: 1rem;
+            margin-top: 10px;
+            z-index: 1;
+        }
+        .section-1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        .section-2 {
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .section-2 h2 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-family: 'Pretendard', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            padding: 0.5rem 5rem;
+        }
+        .section-2 .images {
+            display: flex;
+            gap: 30px;
+        }
+        .section-3 {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .section-3 h2 {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            font-family: 'Pretendard', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            background-color: white;
+            padding: 0.5rem 5rem;
+        }
+        .section-3 .images {
+            display: inline-block;
+            gap: 30px;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 1000;
+        }
+        .scroll-to-top:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="section section-1">
+        <h1>For girls</h1>
+        <p>사진을 누르면 각 브랜드의 정보가 담긴 홈페이지를 확인할 수 있습니다</p>
+    </div>
+    <div class="section section-2">
+        <h2>minimal modern style</h2>
+        <div class="images">
+            <a href="coyseio.html" target="_blank">
+        <img src="image/coyseio.jpg" alt="Coyseio" width="340" height="500"></a>
+            <a href="oheshio.html" target="_blank">
+        <img src="image/ohasio.jpeg" alt="Ohasio"width="340" height="500"></a>
+         <a href="miseki%20seoul.html" target="_blank">
+        <img src="image/miseki seoul.jpeg" alt="Miseki Seoul"width="340" height="500"></a>
+    </div>
+</div>
+    <div class="section section-3">
+        <h2>subculture</h2>
+            <a href="dollskill.html" target="_blank">
+        <img src="image/dollskill.jpeg" alt="dollskill" width="350" height="500"></a>
+            <a href="tntntutu.html" target="_blank">
+        <img src="image/tntntutu.jpeg" alt="tntntutu" width="350" height="500"></a>
+            <a href="doublepunch.html" target="_blank">
+        <img src="image/doublepunch.jpeg" alt="doublepunch" width="350" height="500"></a>
+    </div>
+</div>
+    <div class="scroll-to-top" onclick="scrollToTop()">▲</div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
